@@ -85,7 +85,7 @@ const Gallery = () => {
           />
           <GallerySection
             title="🏥 Internship Moments"
-            images={["/assets/student/12.jpeg", "/assets/student/11.jpeg", "/assets/student/10.jpeg"]}
+            images={["/assets/student/12.jpeg", "/assets/student/11.jpeg", "/assets/student/10.jpeg" , "/assets/student/13.jpeg" , "/assets/student/14.jpeg" , "/assets/student/15.jpeg"]}
           />
         </div>
       </div>

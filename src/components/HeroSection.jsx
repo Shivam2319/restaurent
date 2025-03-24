@@ -39,17 +39,13 @@ import { Button } from "primereact/button";
 function HeroSection() {
   return (
     <div className="relative w-full h-screen flex items-center justify-center text-white">
-      {/* Background Video */}
-      <video 
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        autoPlay 
-        loop 
-        muted
-        playsInline
-      >
-        <source src="/assets/herovideo.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      {/* Background photo */}
+      <img 
+  className="absolute top-0 left-0 w-full h-full object-cover"
+  src="/assets/heroImg.jpg" 
+  alt="Hero Section"
+/>
+
 
       {/* Dark Overlay for Readability */}
       <div className="absolute inset-0 bg-black bg-opacity-30"></div>
