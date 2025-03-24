@@ -343,7 +343,7 @@ import { toast } from "react-toastify"; // For notifications
 import ActionButton from "../components/ActionButton"; // Custom button component
 
 const API_NOTIFICATIONS = "http://localhost:5000/api/notifications";
-const API_INQUIRIES = "http://localhost:5000/api/inquiries";
+const API_INQUIRIES = "http://localhost:5000/api/inquiries/add";
 
 const InquiryAndNotification = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", course: "", message: "" });

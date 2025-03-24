@@ -143,13 +143,21 @@ const profiles = [
     message: `"At RB Memorial School of Nursing, we strive to nurture compassionate, skilled, and dedicated healthcare professionals. As a girls-only institution, we are deeply committed to providing a safe, empowering, and intellectually stimulating environment for our students. We welcome you to be a part of this transformative journey."`,
     sectionTitle: "👨‍🎓 Message from the Director",
   },
+  // {
+  //   name: "Prof. (Dr.) [Principal Name]",
+  //   title: "Principal, RB Memorial School of Nursing",
+  //   image: "/assets/Principal.jpeg",
+  //   message: `"We believe in shaping not just skilled nurses but strong, independent women who can lead in healthcare. With world-class facilities, an excellent faculty team, and extensive practical training, we ensure our students become well-equipped to handle the challenges of the nursing profession. At RBMSN, we are committed to excellence in education, discipline, and service."`,
+  //   sectionTitle: "🎓 Principal’s Message",
+  // },
   {
-    name: "Prof. (Dr.) [Principal Name]",
-    title: "Principal, RB Memorial School of Nursing",
-    image: "/assets/Principal.jpeg",
-    message: `"We believe in shaping not just skilled nurses but strong, independent women who can lead in healthcare. With world-class facilities, an excellent faculty team, and extensive practical training, we ensure our students become well-equipped to handle the challenges of the nursing profession. At RBMSN, we are committed to excellence in education, discipline, and service."`,
-    sectionTitle: "🎓 Principal’s Message",
-  },
+    "name": "R.B. Memorial School of Nursing",
+    "title": "Our Mission",
+    "image": "/assets/mission.jpeg",
+    "message": "The mission of the R.B. Memorial School of Nursing is to provide knowledge and skills to the students regarding social & community service, for the continuous development of an individual as a trained nurse & as a good citizen, capable of functioning effectively in the hospital as well as the community. Recent emphasis of nursing on promotion of health, prevention of illness, restoration of health as well as advances in caring for the ill have opened various new areas of employment and have created added responsibilities for practicing nurses.",
+    "sectionTitle": "🌟 Our Mission"
+}
+
 ];
 
 const Director = () => {

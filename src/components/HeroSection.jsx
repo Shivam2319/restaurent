@@ -41,11 +41,10 @@ function HeroSection() {
     <div className="relative w-full h-screen flex items-center justify-center text-white">
       {/* Background photo */}
       <img 
-  className="absolute top-0 left-0 w-full h-full object-cover"
-  src="/assets/heroImg.jpg" 
-  alt="Hero Section"
-/>
-
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        src="/assets/heroImg.jpg" 
+        alt="Hero Section"
+      />
 
       {/* Dark Overlay for Readability */}
       <div className="absolute inset-0 bg-black bg-opacity-30"></div>
@@ -57,6 +56,11 @@ function HeroSection() {
         animate={{ opacity: 1, y: 0 }} 
         transition={{ duration: 0.8 }}
       >
+        {/* Marquee for Courses Offered */}
+        <marquee className="text-2xl md:text-3xl font-semibold mb-4 text-yellow-300">
+          🌟 Unlock Your Nursing Career with Our Premier Courses: **ANM & GNM** - Enroll Today! 🌟
+        </marquee>
+
         <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
           Experience a World-Class Education <br /> that Shapes the Future.
         </h1>
