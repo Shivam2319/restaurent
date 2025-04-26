@@ -11,9 +11,9 @@ const fullMenu = {
         { name: "Hot and Sour", price: "₹149", img: "/assets/menu/soup.jpg" },
         { name: "Veg Manchow", price: "₹149", img: "/assets/menu/VegManchow.jpg" },
         { name: "Lemon Coriander", price: "₹149", img: "/assets/menu/Lemon-Coriander-Soup-1.webp" },
-        { name: "Butter Milk / Lassi", price: "₹49 / ₹75", img: "/assets/menu/lassi.jpg" },
-        { name: "Mint Mojito", price: "₹49", img: "/assets/menu/mojito.jpg" },
-        { name: "Lemon Water / Soda", price: "₹30 / ₹50", img: "/assets/menu/lemon-soda.jpg" },
+        { name: "Butter Milk / Lassi", price: "₹49 / ₹75", img: "/assets/menu/lassi.webp" },
+        { name: "Mint Mojito", price: "₹49", img: "/assets/menu/MintMojito.jpg" },
+        { name: "Lemon Water / Soda", price: "₹30 / ₹50", img: "/assets/menu/LemonWater.webp" },
       ],
       Appetizers: [
         { name: "Paneer Tikka", price: "₹199", img: "/assets/menu/panirtikkaa.jpg" },
