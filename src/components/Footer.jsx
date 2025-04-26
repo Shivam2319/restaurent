@@ -1,140 +1,236 @@
+
 // import React from "react";
-// import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+// import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+// import { MdPhone } from "react-icons/md";
 
 // const Footer = () => {
 //   return (
-//     <footer className="bg-[#1a1a2e] text-white py-12 mt-12">
-//       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
-        
-//         {/* About Section */}
-//         <div>
-//           <h2 className="text-2xl font-bold">RB Memorial School of Nursing</h2>
-//           <p className="mt-3 text-gray-400">
-//             Shaping the future of healthcare through excellence in education and training.
+//     <footer className="bg-gray-900 text-white">
+//       <div className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+//         {/* Left - Logo + About + Social */}
+//         <div className="col-span-1 flex flex-col items-center md:items-start text-center md:text-left">
+//           <img src="/assets/logo-white.png" alt="mirchiFy" className="w-32 mb-4" />
+//           <p className="text-sm text-gray-300 mb-4 max-w-sm">
+//             mirchiFy is known for creating unforgettable food experiences. We believe that food is therapy and try to put up a smile on your face with our culinary skills.
 //           </p>
-//           <div className="flex mt-4 space-x-4">
-//             <a href="#" className="hover:text-gray-300 text-xl"><FaFacebook /></a>
-//             <a href="#" className="hover:text-gray-300 text-xl"><FaInstagram /></a>
-//             <a href="#" className="hover:text-gray-300 text-xl"><FaLinkedin /></a>
+//           <div className="flex gap-4 text-lg text-gray-300">
+//             <a href="#"><FaInstagram /></a>
+//             <a href="#"><FaFacebookF /></a>
+//             <a href="#"><FaTwitter /></a>
 //           </div>
 //         </div>
 
-//         {/* Quick Links */}
+//         {/* Middle Left - Address */}
 //         <div>
-//           <h3 className="text-xl font-semibold">Quick Links</h3>
-//           <ul className="mt-3 space-y-2">
-//             <li><a href="/about" className="hover:text-gray-300">About Us</a></li>
-//             <li><a href="/courses" className="hover:text-gray-300">Courses</a></li>
-//             <li><a href="/admission" className="hover:text-gray-300">Admission</a></li>
-//             <li><a href="/contact" className="hover:text-gray-300">Contact Us</a></li>
-//           </ul>
+//           <h4 className="font-semibold text-white mb-3">Our Addresses</h4>
+//           <p className="text-sm text-gray-300 mb-2">
+//             34, Karl Marx Sarani, Khidderpore,<br />
+//             Kolkata – 700023
+//           </p>
+//           <p className="text-sm text-gray-300">
+//             9, Kazi Nazrul Islam Avenue<br />
+//             Kaikhali Crossing,<br />
+//             Kolkata – 700052
+//           </p>
 //         </div>
 
-//         {/* Google Map Embed */}
+//         {/* Middle Right - Business Hours */}
 //         <div>
-//           <h3 className="text-xl font-semibold">Our Location</h3>
-//           <div className="mt-3 rounded-lg overflow-hidden shadow-lg">
-//             <iframe
-//               title="Google Map"
-//               className="w-full h-40 md:h-48 rounded-lg"
-//               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.4226851062267!2d85.9073724!3d26.117757799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39edb8f3a062bf0d%3A0x249d2ed0f5ef81d4!2sR.B.Memorial%20School%20Of%20Nursing!5e0!3m2!1sen!2sin!4v1740191763566!5m2!1sen!2sin"
-//               allowFullScreen=""
-//               loading="lazy"
-//             ></iframe>
+//           <h4 className="font-semibold text-white mb-3">Business Hours</h4>
+//           {["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].map(day => (
+//             <p key={day} className="text-sm text-gray-300">
+//               {day}: 11:00 AM – 11:00 PM
+//             </p>
+//           ))}
+//         </div>
+
+//         {/* Right - Contact Details */}
+//         <div>
+//           <h4 className="font-semibold text-white mb-3">Contact Details</h4>
+//           <div className="mb-3">
+//             <h5 className="font-semibold text-white">Khidderpore</h5>
+//             <p className="text-sm text-gray-300 flex items-center gap-1">
+//               <MdPhone /> +91 8481848484
+//             </p>
+//             <p className="text-sm text-gray-300 flex items-center gap-1">
+//               <MdPhone /> +91 8420533005
+//             </p>
+//           </div>
+//           <div>
+//             <h5 className="font-semibold text-white">Kaikhali</h5>
+//             <p className="text-sm text-gray-300 flex items-center gap-1">
+//               <MdPhone /> +033 4804 9142
+//             </p>
+//             <p className="text-sm text-gray-300 flex items-center gap-1">
+//               <MdPhone /> +91 99039 80011
+//             </p>
 //           </div>
 //         </div>
 //       </div>
 
-//       {/* Bottom Section */}
-//       <div className="mt-8 border-t border-gray-600 text-center pt-4 text-sm text-gray-400">
-//         © {new Date().getFullYear()} RB Memorial School of Nursing. All rights reserved.
+//       {/* Bottom - Google Map */}
+//       <div className="w-full">
+//         <iframe
+//           title="mirchiFy Map"
+//           src="https://www.google.com/maps/embed?pb=..."
+//           width="100%"
+//           height="300"
+//           allowFullScreen=""
+//           loading="lazy"
+//           className="border-none w-full"
+//         ></iframe>
 //       </div>
 //     </footer>
 //   );
 // };
 
 // export default Footer;
-import React from "react";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
-const Footer = () => {
-  return (
-    <footer className="bg-[#1a1a2e] text-white py-12 mt-12">
-      <div className="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center md:text-left">
+// import React from "react";
+// import { FaInstagram, FaFacebookF, FaTwitter, FaPhoneAlt } from "react-icons/fa";
+
+// export default function Footer() {
+//   return (
+//     <footer className="bg-gray-900 text-white px-6 py-10">
+//       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         
-        {/* About Section */}
-        <div>
-          <h2 className="text-2xl font-bold">RB Memorial School of Nursing</h2>
-          <p className="mt-3 text-gray-400 leading-relaxed">
-            Shaping the future of healthcare through excellence in education and training.
+//         {/* Brand Info */}
+//         <div>
+//           <h2 className="text-2xl font-bold text-white mb-4">MirchiFy</h2>
+//           <p className="text-sm text-gray-300 mb-4">
+//             MirchiFy is known for creating unforgettable food experiences. We believe food is therapy and try to put a smile on your face with our culinary skills.
+//           </p>
+//           <div className="flex gap-4 text-xl">
+//             <FaInstagram className="hover:text-red-500 cursor-pointer" />
+//             <FaFacebookF className="hover:text-blue-500 cursor-pointer" />
+//             <FaTwitter className="hover:text-blue-300 cursor-pointer" />
+//           </div>
+//         </div>
+
+//         {/* Address */}
+//         <div>
+//           <h3 className="text-lg font-semibold mb-2">Our Address</h3>
+//           <p className="text-sm text-gray-300">
+//             Shop Number 88, Assotech Business Cresterra, Plot No 22,<br />
+//             Sector 135, Noida, Uttar Pradesh 201304
+//           </p>
+//         </div>
+
+//         {/* Business Hours */}
+//         <div>
+//           <h3 className="text-lg font-semibold mb-2">Business Hours</h3>
+//           <ul className="text-sm text-gray-300 space-y-1">
+//             <li>Mon - Sun: 11:00 AM – 11:00 PM</li>
+//           </ul>
+//         </div>
+
+//         {/* Contact */}
+//         <div>
+//           <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
+//           <p className="text-sm text-gray-300 flex items-center gap-2">
+//             <FaPhoneAlt /> +91 9935754754
+//           </p>
+//         </div>
+//       </div>
+
+//       {/* Map */}
+//       <div className="mt-10">
+//         <iframe
+//           title="MirchiFy Location"
+//           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3512.3775534188973!2d77.38256427522483!3d28.51445907572061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce99f7621b2cb%3A0x73ea10f6d135c978!2sAssotech%20Business%20Cresterra!5e0!3m2!1sen!2sin!4v1682000000000!5m2!1sen!2sin"
+//           width="100%"
+//           height="250"
+//           className="rounded-lg border-0 w-full"
+//           allowFullScreen=""
+//           loading="lazy"
+//           referrerPolicy="no-referrer-when-downgrade"
+//         ></iframe>
+//       </div>
+
+//       <div className="text-center text-gray-500 mt-6 text-sm">
+//         © {new Date().getFullYear()} MirchiFy. All rights reserved.
+//       </div>
+//     </footer>
+//   );
+// }
+
+
+// responsive layout for all devices
+import React from "react";
+import { FaInstagram, FaFacebookF, FaTwitter, FaPhoneAlt } from "react-icons/fa";
+
+export default function Footer() {
+  return (
+    <footer className="bg-gray-900 text-white px-4 sm:px-6 py-8 sm:py-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
+        
+        {/* Brand Info */}
+        <div className="sm:col-span-2 lg:col-span-1">
+          <h2 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">MirchiFy</h2>
+          <p className="text-xs sm:text-sm text-gray-300 mb-4">
+            MirchiFy is known for creating unforgettable food experiences. We believe food is therapy and try to put a smile on your face with our culinary skills.
           </p>
-          <div className="flex justify-center md:justify-start mt-4 space-x-4">
-            <a 
-              href="#" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              aria-label="Facebook"
-              className="hover:text-gray-300 text-xl transition-transform transform hover:scale-110"
-            >
-              <FaFacebook />
-            </a>
-            <a 
-              href="#" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              aria-label="Instagram"
-              className="hover:text-gray-300 text-xl transition-transform transform hover:scale-110"
-            >
+          <div className="flex gap-3 sm:gap-4 text-lg sm:text-xl">
+            <a href="#" aria-label="Instagram" className="hover:text-red-500 transition-colors">
               <FaInstagram />
             </a>
-            <a 
-              href="#" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              aria-label="LinkedIn"
-              className="hover:text-gray-300 text-xl transition-transform transform hover:scale-110"
-            >
-              <FaLinkedin />
+            <a href="#" aria-label="Facebook" className="hover:text-blue-500 transition-colors">
+              <FaFacebookF />
+            </a>
+            <a href="#" aria-label="Twitter" className="hover:text-blue-300 transition-colors">
+              <FaTwitter />
             </a>
           </div>
         </div>
 
-        {/* Quick Links */}
+        {/* Address */}
         <div>
-          <h3 className="text-xl font-semibold">Quick Links</h3>
-          <ul className="mt-3 space-y-2">
-            {["About Us", "Courses", "Admission", "Contact Us"].map((link, index) => (
-              <li key={index}>
-                <a href={`/${link.toLowerCase().replace(" ", "")}`} className="hover:text-gray-300 transition-all">
-                  {link}
-                </a>
-              </li>
-            ))}
+          <h3 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">Our Address</h3>
+          <p className="text-xs sm:text-sm text-gray-300">
+            Shop Number 88, Assotech Business Cresterra,<br />
+            Plot No 22, Sector 135,<br />
+            Noida, Uttar Pradesh 201304
+          </p>
+        </div>
+
+        {/* Business Hours */}
+        <div>
+          <h3 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">Business Hours</h3>
+          <ul className="text-xs sm:text-sm text-gray-300 space-y-1">
+            <li>Mon - Sun:</li>
+            <li>11:00 AM – 11:00 PM</li>
           </ul>
         </div>
 
-        {/* Google Map Embed */}
+        {/* Contact */}
         <div>
-          <h3 className="text-xl font-semibold">Our Location</h3>
-          <div className="mt-3 rounded-lg overflow-hidden shadow-lg">
-            <iframe
-              title="Google Map"
-              className="w-full h-40 md:h-48 rounded-lg"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.4226851062267!2d85.9073724!3d26.117757799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39edb8f3a062bf0d%3A0x249d2ed0f5ef81d4!2sR.B.Memorial%20School%20Of%20Nursing!5e0!3m2!1sen!2sin!4v1740191763566!5m2!1sen!2sin"
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+          <h3 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">Contact Us</h3>
+          <a 
+            href="tel:+919935754754" 
+            className="text-xs sm:text-sm text-gray-300 hover:text-white flex items-center gap-2 transition-colors"
+          >
+            <FaPhoneAlt /> +91 9935754754
+          </a>
         </div>
       </div>
 
-      {/* Bottom Section */}
-      <div className="mt-8 border-t border-gray-600 text-center pt-4 text-sm text-gray-400">
-        © {new Date().getFullYear()} RB Memorial School of Nursing. All rights reserved.
+      {/* Map */}
+      <div className="mt-8 sm:mt-10">
+        <iframe
+          title="MirchiFy Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3512.3775534188973!2d77.38256427522483!3d28.51445907572061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce99f7621b2cb%3A0x73ea10f6d135c978!2sAssotech%20Business%20Cresterra!5e0!3m2!1sen!2sin!4v1682000000000!5m2!1sen!2sin"
+          width="100%"
+          height="200"
+          className="rounded-lg border-0 w-full"
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div className="text-center text-gray-500 mt-6 text-xs sm:text-sm">
+        © {new Date().getFullYear()} MirchiFy. All rights reserved.
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

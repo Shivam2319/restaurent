@@ -37,11 +37,11 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 
 import Home from "./Pages/Home";
-import AboutRbmsn from "./Pages/AboutRbmsn"; 
+import About from "./Pages/About"; 
+import MenuPage from "./Pages/MenuPage"; 
 import Gallery from "./Pages/Gallery";
-import Courses from "./Pages/Courses";
-import Facilities from "./Pages/Facilities";
-import Admission from "./Pages/Admission";
+import MyOrders from "./Pages/MyOrders";
+
 import Login from "./Pages/Login";  // Import Login page
 import Signup from "./Pages/Signup"; // Import Signup page
 
@@ -50,11 +50,12 @@ function App() {
     
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about/rbmsn" element={<AboutRbmsn />} />
-        <Route path="/courses" element={<Courses />} />
-        <Route path="/facilities" element={<Facilities />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/my-orders" element={<MyOrders />} />
+        <Route path="/menu" element={<MenuPage />} />
+        
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/admission" element={<Admission />} />
+        
         <Route path="/login" element={<Login />} />   {/* Login Page Route */}
         <Route path="/signup" element={<Signup />} /> {/* Signup Page Route */}
       </Routes>
