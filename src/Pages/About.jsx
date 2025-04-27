@@ -65,7 +65,7 @@ const About = () => {
               memories for our guests with every meal.
             </p>
             <p className="text-gray-600 mt-3 sm:mt-4 font-semibold text-sm sm:text-base">
-              — The MirchiFy Team
+               Jaya Sharma & The MirchiFy Team
             </p>
           </Card>
           <motion.img
