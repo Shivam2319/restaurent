@@ -94,32 +94,59 @@ import { GiChefToque } from "react-icons/gi"; // Chef icon
 const ChefSpecials = () => {
   const specials = [
     {
-      id: "01",
-      title: "Grilled Salmon with Lemon Butter",
-      image: "/assets/MUGALI.jpg",
-      link: "/menu/salmon",
-      description:
-        "Fresh Atlantic salmon grilled to perfection and served with a zesty lemon butter sauce. A delightful treat for seafood lovers.",
-      icon: <GiChefToque className="text-yellow-400 text-xl md:text-2xl" />,
-    },
-    {
-      id: "02",
-      title: "Herb-Crusted Lamb Chops",
-      image: "/assets/MUGALI.jpg",
-      link: "/menu/lamb",
-      description:
-        "Tender lamb chops encrusted with herbs and spices, grilled and paired with roasted garlic mashed potatoes.",
-      icon: <GiChefToque className="text-yellow-400 text-xl md:text-2xl" />,
-    },
-    {
-      id: "03",
-      title: "Vegan Buddha Bowl",
-      image: "/assets/MUGALI.jpg",
-      link: "/menu/buddha-bowl",
-      description:
-        "A nourishing bowl of quinoa, chickpeas, roasted veggies, avocado, and tahini dressing — healthy and delicious.",
-      icon: <GiChefToque className="text-yellow-400 text-xl md:text-2xl" />,
-    }
+        id: "01",
+        title: "Paneer Tikka",
+        image: "/assets/panirtikkaa.jpg",
+        link: "/menu/paneer-tikka",
+        description:
+          "Succulent cubes of paneer marinated in spiced yogurt and grilled to perfection in the tandoor. Served with mint chutney and onion rings.",
+        icon: <GiChefToque className="text-yellow-400 text-xl md:text-2xl" />,
+      },
+      {
+        id: "02",
+        title: "Honey Chilli Potato",
+        image: "/assets/honeyChilliPotato.png",
+        link: "/menu/honey-chilli-potato",
+        description:
+          "Crispy fried potatoes tossed in a sweet, spicy and tangy sauce with honey glaze. A perfect balance of flavors with sesame seed garnish.",
+        icon: <GiChefToque className="text-yellow-400 text-xl md:text-2xl" />,
+      },
+      {
+        id: "03",
+        title: "Mushroom Tikka",
+        image: "/assets/mushroomTikka.jpg",
+        link: "/menu/mushroom-tikka",
+        description:
+          "Juicy mushrooms marinated in aromatic spices and grilled in clay oven. Served with charred bell peppers and tangy dip.",
+        icon: <GiChefToque className="text-yellow-400 text-xl md:text-2xl" />,
+      },
+      {
+        id: "04",
+        title: "Vegetable Dum Biryani",
+        image: "/assets/MUGALI.jpg",
+        link: "/menu/veg-biryani",
+        description:
+          "Fragrant basmati rice cooked with assorted vegetables, saffron and whole spices using the traditional dum pukht method.",
+        icon: <GiChefToque className="text-yellow-400 text-xl md:text-2xl" />,
+      },
+      {
+        id: "05",
+        title: "Lahsun Paneer Tikka",
+        image: "/assets/lahsunPanirTikka.jpg",
+        link: "/menu/paneer-butter-masala",
+        description:
+          "Soft paneer cubes in rich, creamy tomato gravy with butter and cream. Best enjoyed with garlic naan or steamed rice.",
+        icon: <GiChefToque className="text-yellow-400 text-xl md:text-2xl" />,
+      },
+      {
+        id: "06",
+        title: "Vegetable Kebab Platter",
+        image: "/assets/MUGALI.jpg",
+        link: "/menu/veg-kebab-platter",
+        description:
+          "Assortment of our signature vegetarian kebabs including paneer, mushroom and vegetable seekh. Served with three dipping sauces.",
+        icon: <GiChefToque className="text-yellow-400 text-xl md:text-2xl" />,
+      }
   ];
 
   return (
