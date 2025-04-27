@@ -59,17 +59,17 @@ const About = () => {
               👨‍🍳 A Message from Our Founder
             </h3>
             <p className="text-gray-700 text-base sm:text-lg">
-              "At MirchiFy, we believe food is not just to satisfy hunger but to
+              At MirchiFy, we believe food is not just to satisfy hunger but to
               bring joy. Each dish we serve is crafted with care, using fresh
               ingredients and traditional recipes. Our passion is to create
-              memories for our guests with every meal."
+              memories for our guests with every meal.
             </p>
             <p className="text-gray-600 mt-3 sm:mt-4 font-semibold text-sm sm:text-base">
               — The MirchiFy Team
             </p>
           </Card>
           <motion.img
-            src="/assets/chef-owner.jpg"
+            src="/assets/founderImage.webp"
             alt="Founder"
             className="rounded-2xl shadow-lg w-full h-64 sm:h-80 lg:h-96 object-cover order-1 lg:order-2"
             initial={{ opacity: 0, x: 50 }}
