@@ -23,36 +23,69 @@ const Gallery = () => {
           <GallerySection
             title="🍽️ Dishes We Serve"
             images={[
-              "/assets/gallery/dish1.jpg",
-              "/assets/gallery/dish2.jpg",
-              "/assets/gallery/dish3.jpg",
-              "/assets/gallery/dish4.jpg",
-              "/assets/gallery/dish5.jpg",
+              "/assets/menu/soup.jpg",
+    "/assets/menu/lassi.webp",
+    "/assets/menu/MintMojito.jpg",
+    "/assets/menu/Lemon-Coriander-Soup-1.webp",
+    "/assets/menu/VegManchow.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
             ]}
           />
           <GallerySection
             title="👨‍🍳 Chef in Action"
             images={[
-              "/assets/gallery/chef1.jpg",
-              "/assets/gallery/chef2.jpg",
-              "/assets/gallery/chef3.jpg",
+              "/assets/menu/soup.jpg",
+    "/assets/menu/lassi.webp",
+    "/assets/menu/MintMojito.jpg",
+    "/assets/menu/Lemon-Coriander-Soup-1.webp",
+    "/assets/menu/VegManchow.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
             ]}
           />
           <GallerySection
             title="✨ Restaurant Ambiance"
             images={[
-              "/assets/gallery/interior1.jpg",
-              "/assets/gallery/interior2.jpg",
-              "/assets/gallery/interior3.jpg",
+              "/assets/menu/soup.jpg",
+    "/assets/menu/lassi.webp",
+    "/assets/menu/MintMojito.jpg",
+    "/assets/menu/Lemon-Coriander-Soup-1.webp",
+    "/assets/menu/VegManchow.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
             ]}
           />
           <GallerySection
             title="📸 Happy Moments with Customers"
             images={[
-              "/assets/gallery/customer1.jpg",
-              "/assets/gallery/customer2.jpg",
-              "/assets/gallery/customer3.jpg",
-              "/assets/gallery/customer4.jpg",
+              "/assets/menu/soup.jpg",
+    "/assets/menu/lassi.webp",
+    "/assets/menu/MintMojito.jpg",
+    "/assets/menu/Lemon-Coriander-Soup-1.webp",
+    "/assets/menu/VegManchow.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
+    "/assets/menu/soup.jpg",
             ]}
           />
         </div>
