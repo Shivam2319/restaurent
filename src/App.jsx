@@ -51,9 +51,11 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import MenuPage from "./Pages/MenuPage";
 import Gallery from "./Pages/Gallery";
-import MyOrders from "./Pages/MyOrders";
+// import MyOrders from "./Pages/MyOrders";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
+import Reservation from "./Pages/Reservation";
+import Contact from "./Pages/Contact";
 
 // Layout Components
 // import Navbar from "./components/Navbar";
@@ -70,7 +72,9 @@ function App() {
         
          <Route path="/" element={<Home />} />
          <Route path="/about" element={<About />} />
-         <Route path="/my-orders" element={<MyOrders />} />
+         {/* <Route path="/my-orders" element={<MyOrders />} /> */}
+         <Route path="/reservation" element={<Reservation />} />
+         <Route path="/contact" element={<Contact />} />
          <Route path="/menu" element={<MenuPage />} />      
          <Route path="/gallery" element={<Gallery />} />      
          <Route path="/login" element={<Login />} />   {/* Login Page Route */}

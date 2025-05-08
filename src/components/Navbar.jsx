@@ -21,12 +21,12 @@ const Navbar = () => {
       url: "/menu",
       command: () => setVisible(false)
     },
-    { 
-      label: "My Orders", 
-      icon: "pi pi-shopping-cart", 
-      url: "/my-orders",
-      command: () => setVisible(false)
-    },
+    // { 
+    //   label: "My Orders", 
+    //   icon: "pi pi-shopping-cart", 
+    //   url: "/my-orders",
+    //   command: () => setVisible(false)
+    // },
     { 
       label: "About Us", 
       icon: "pi pi-info-circle", 
