@@ -198,7 +198,7 @@ export default function MenuPage() {
   };
 
   const renderItems = (category, items) => {
-    const visible = visibleCount[category] || 6;
+    const visible = visibleCount[category] || 4;
     return (
       <div className="mb-12" key={category}>
         <h2 className="text-2xl font-bold text-[#192f59] mb-4">{category}</h2>
@@ -233,7 +233,7 @@ export default function MenuPage() {
             );
           })}
         </div>
-        {visible < items.length && (
+        {items.length > visible && (
           <div className="text-center mt-6">
             <button
               onClick={() => handleAddMore(category)}
