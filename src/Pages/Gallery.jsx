@@ -24,17 +24,17 @@ const Gallery = () => {
             title="🍽️ Dishes We Serve"
             images={[
               "/assets/menu/soup.jpg",
-    "/assets/menu/lassi.webp",
-    "/assets/menu/MintMojito.jpg",
+    "/assets/menu/blueBerryMojito.jpg",
+    "/assets/menu/MintMojito.jpeg",
     "/assets/menu/Lemon-Coriander-Soup-1.webp",
     "/assets/menu/VegManchow.jpg",
-    "/assets/menu/soup.jpg",
-    "/assets/menu/soup.jpg",
-    "/assets/menu/soup.jpg",
-    "/assets/menu/soup.jpg",
-    "/assets/menu/soup.jpg",
-    "/assets/menu/soup.jpg",
-    "/assets/menu/soup.jpg",
+    "/assets/menu/Caesar Salad.jpeg",
+    "/assets/menu/chilliMushroom.jpeg",
+    "/assets/menu/VegBiryani.jpeg",
+    "/assets/menu/mirchifySplpasta.jpeg",
+    "/assets/menu/mishroomtikka.jpeg",
+    "/assets/menu/panirtikkaa.jpeg",
+    "/assets/menu/rajmaChawal.jpeg",
             ]}
           />
           <GallerySection
@@ -75,17 +75,17 @@ const Gallery = () => {
             title="📸 Happy Moments with Customers"
             images={[
               "/assets/menu/soup.jpg",
-    "/assets/menu/lassi.webp",
-    "/assets/menu/MintMojito.jpg",
-    "/assets/menu/Lemon-Coriander-Soup-1.webp",
-    "/assets/menu/VegManchow.jpg",
-    "/assets/menu/soup.jpg",
-    "/assets/menu/soup.jpg",
-    "/assets/menu/soup.jpg",
-    "/assets/menu/soup.jpg",
-    "/assets/menu/soup.jpg",
-    "/assets/menu/soup.jpg",
-    "/assets/menu/soup.jpg",
+    "/assets/menu/lass.webp",
+    "/assets/menu/MintMojit.jpg",
+    "/assets/menu/Lemon-Coriander-Sou-1.webp",
+    "/assets/menu/VegManchow1.jpg",
+    "/assets/menu/soup1.jpg",
+    "/assets/menu/soup1.jpg",
+    "/assets/menu/soup1.jpg",
+    "/assets/menu/soup1.jpg",
+    "/assets/menu/soup1.jpg",
+    "/assets/menu/soup1.jpg",
+    "/assets/menu/soup1.jpg",
             ]}
           />
         </div>

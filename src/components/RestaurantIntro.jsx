@@ -1,100 +1,6 @@
-// import React from "react";
-// import { motion } from "framer-motion";
-// import { Button } from "primereact/button";
-
-// function RestaurantIntro() {
-//   return (
-//     <div
-//       className="relative w-full h-screen flex items-center justify-center text-white bg-cover bg-center"
-//       style={{ backgroundImage: "url('/assets/biryani-bg.jpg')" }} // Replace with your restaurant background image
-//     >
-//       {/* Gradient Overlay */}
-//       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black/80 to-black/30"></div>
-
-//       {/* Hero Content */}
-//       <div className="relative text-center px-6">
-//         <motion.div
-//           initial={{ opacity: 0, y: 30 }}
-//           animate={{ opacity: 1, y: 0 }}
-//           transition={{ duration: 0.8 }}
-//         >
-//           {/* Marquee for Specials */}
-//           <marquee className="text-xl md:text-2xl font-semibold mb-4 text-yellow-300">
-//             🍽️ Chef's Specials Today: Grilled Salmon | Lamb Chops | Vegan Delight – Book Your Table Now! 🍷
-//           </marquee>
-
-//           <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight drop-shadow-lg">
-//             Indulge in Culinary Excellence <br /> at <span className="text-yellow-400">Gourmet Garden</span>
-//           </h1>
-
-//           <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 drop-shadow-md">
-//             Discover a fine dining experience that blends world-class flavors with elegant ambiance. Your table is waiting!
-//           </p>
-
-//           {/* CTA Button */}
-//           <div className="mt-6">
-//             <Button
-//               label="Book a Table"
-//               className="p-button-lg shadow-lg px-6 py-3 text-lg rounded-lg bg-yellow-500 border-yellow-500 hover:bg-yellow-600"
-//             />
-//           </div>
-//         </motion.div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default RestaurantIntro;
-// import React from "react";
-// import { Button } from "primereact/button";
-// import { motion } from "framer-motion";
-
-// const RestaurantIntro = () => {
-//   return (
-//     <div
-//       className="relative w-full h-screen flex items-center justify-center text-white bg-cover bg-center"
-//       style={{ backgroundImage: "url('/assets/biryani-bg.jpg')" }} // Replace with your restaurant background image
-//     >
-//       {/* Gradient Overlay */}
-//       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black/80 to-black/30"></div>
-
-//       {/* Hero Content */}
-//       <div className="relative text-center px-6">
-//         <motion.div
-//           initial={{ opacity: 0, y: 30 }}
-//           animate={{ opacity: 1, y: 0 }}
-//           transition={{ duration: 0.8 }}
-//         >
-//           {/* Marquee for Specials */}
-//           <marquee className="text-xl md:text-2xl font-semibold mb-4 text-green-300">
-//             🌿 Today's Specials: Paneer Lababdar | Tandoori Platter | Veg Dum Biryani – 100% Pure Vegetarian Delight! 🥗
-//           </marquee>
-
-//           <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight drop-shadow-lg">
-//             Experience Pure Veg Culinary Bliss <br /> at <span className="text-green-400">Gourmet Garden</span>
-//           </h1>
-
-//           <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 drop-shadow-md">
-//             A fine dining experience for those who seek the best in vegetarian cuisine — authentic, flavorful, and fresh!
-//           </p>
-
-//           {/* CTA Button */}
-//           <div className="mt-6">
-//             <Button
-//               label="Book a Table"
-//               className="p-button-lg shadow-lg px-6 py-3 text-lg rounded-lg bg-green-500 border-green-500 hover:bg-green-600"
-//             />
-//           </div>
-//         </motion.div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default RestaurantIntro;
-
 
 // responsive Layout
+import { Link } from 'react-router-dom';
 import React from "react";
 import { Button } from "primereact/button";
 import { motion } from "framer-motion";
@@ -129,7 +35,7 @@ const RestaurantIntro = () => {
             transition={{ delay: 0.2 }}
           >
             <p className="text-sm sm:text-base md:text-lg font-medium">
-              🌿 Today's Specials: Paneer Lababdar | Tandoori Platter | Veg Dum Biryani
+              🌿 Today &apos;s Specials: Paneer Lababdar | Tandoori Platter | Veg Dum Biryani
             </p>
           </motion.div>
 
@@ -150,20 +56,27 @@ const RestaurantIntro = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
+              <Link to="/reservation">
               <Button
                 label="Book a Table"
+                // link: "/reservation",
                 className="p-button-lg px-6 py-3 text-white bg-green-600 border-green-600 hover:bg-green-700"
+                
               />
+              </Link>
+              
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
+              <Link to ="/menu">
               <Button
                 label="View Menu"
                 className="p-button-lg px-6 py-3 text-green-600 bg-transparent border-green-600 hover:bg-white/10"
                 outlined
               />
+              </Link>
             </motion.div>
           </div>
 

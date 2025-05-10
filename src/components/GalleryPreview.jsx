@@ -8,7 +8,7 @@ const GalleryPreview = () => {
     '/assets/honeyChilliPotato.png',
     '/assets/lahsunPanirTikka.jpg',
     '/assets/panirtikkaa.jpg',
-    '/assets/mushroomTikka.jpg',
+    '/assets/menu/mishroomtikka.png',
   ];
 
   return (
@@ -37,7 +37,7 @@ const GalleryPreview = () => {
             <Image
               src={img}
               alt={`Gallery Image ${index + 1}`}
-              className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
+              className="w-full h-65 object-cover transition-transform duration-500 group-hover:scale-110"
               preview
             />
 

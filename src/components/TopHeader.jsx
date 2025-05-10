@@ -5,7 +5,7 @@ import {
   faPhone,
   faEnvelope,
   faUser,
-  faSignOutAlt,
+  // faSignOutAlt,
   faBell, // Notification Icon
   faDownload, // Download Icon
   faPaperPlane,
@@ -99,7 +99,7 @@ const TopHeader = () => {
 
       {/* Social Media & Login/Logout */}
       <div className="flex items-center space-x-4">
-        <a href="https://www.facebook.com/" aria-label="Facebook" className="hover:text-gray-300 transition-all">
+        <a href="https://www.facebook.com/share/1GNMRELipA/" aria-label="Facebook" className="hover:text-gray-300 transition-all">
           <FontAwesomeIcon icon={faFacebook} />
         </a>
         <a href="https://twitter.com" aria-label="Twitter" className="hover:text-gray-300 transition-all">
@@ -108,7 +108,7 @@ const TopHeader = () => {
         <a href="https://youtube.com" aria-label="YouTube" className="hover:text-gray-300 transition-all">
           <FontAwesomeIcon icon={faYoutube} />
         </a>
-        <a href="https://www.instagram.com/" aria-label="LinkedIn" className="hover:text-gray-300 transition-all">
+        <a href="https://www.instagram.com/mirchify.official?igsh=d3pkZHlnejhmeDJv" aria-label="LinkedIn" className="hover:text-gray-300 transition-all">
           <FontAwesomeIcon icon={faInstagram} />
         </a>
 
@@ -118,7 +118,7 @@ const TopHeader = () => {
             className="relative text-white hover:text-gray-300 transition-all"
             onClick={() => setIsModalOpen(true)}
           >
-            <FontAwesomeIcon icon={faBell} size="lg" />
+            {/* <FontAwesomeIcon icon={faBell} size="lg" /> */}
           </button>
         )}
 
@@ -129,7 +129,7 @@ const TopHeader = () => {
             className="hover:text-gray-300 transition-all flex items-center space-x-1"
             onClick={handleLogout}
           >
-            <FontAwesomeIcon icon={faSignOutAlt} />
+            {/* <FontAwesomeIcon icon={faSignOutAlt} /> */}
             <span className="hidden sm:inline">Logout</span>
           </button>
         ) : (
@@ -138,8 +138,8 @@ const TopHeader = () => {
             className="hover:text-gray-300 transition-all flex items-center space-x-1"
             onClick={() => navigate("/login")}
           >
-            <FontAwesomeIcon icon={faUser} />
-            <span className="hidden sm:inline">Login</span>
+            {/* <FontAwesomeIcon icon={faUser} /> */}
+            {/* <span className="hidden sm:inline">Login</span> */}
           </button>
         )}
       </div>

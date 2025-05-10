@@ -15,6 +15,7 @@ const fullMenu = {
           { name: "Butter Milk ", price: "₹49", img: "/assets/menu/butterMilk.webp" },
           { name: "Lassi", price: "₹75", img: "/assets/menu/lassi.webp" },
           { name: "Mint Mojito", price: "₹49", img: "/assets/menu/MintMojito.jpeg" },
+          { name: "Blue Berry Mojito", price: "₹49", img: "/assets/menu/blueBerryMojito.jpg" },
           // { name: "Lemon Water", price: "₹30", img: "/assets/menu/LemonWater.webp" },
           { name: "Lemon Soda", price: "₹50", img: "/assets/menu/LemonWater.webp" }
         ],
@@ -259,6 +260,7 @@ export default function MenuPage() {
     <div className="bg-gradient-to-br from-[#fff9f5] via-[#fff0e8] to-[#ffe8e0] min-h-screen">
       <TopHeader />
       <Navbar />
+      <marquee behavior="" direction="">Free Delivery for all orders above ₹499</marquee>
 
       <main className="container mx-auto px-4 py-10">
         <motion.h1
