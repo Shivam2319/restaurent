@@ -56,13 +56,13 @@ const Navbar = () => {
   const start = (
     <Link to="/" className="flex items-center gap-3 no-underline">
       <img
-        src="/assets/mirchify.webp"
+        src="/assets/mirchifyLogo.png"
         alt="Restaurant Logo"
-        className="h-10 w-10 object-contain rounded-full shadow"
+        className="h-10 w-40 object-contain"
       />
-      <span className="text-2xl font-bold text-[#d63447] tracking-wide">
+      {/* <span className="text-2xl font-bold text-[#d63447] tracking-wide">
         MIRCHIFY
-      </span>
+      </span> */}
     </Link>
   );
 
