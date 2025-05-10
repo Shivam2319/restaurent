@@ -61,7 +61,7 @@ const Navbar = () => {
         className="h-10 w-10 object-contain rounded-full shadow"
       />
       <span className="text-2xl font-bold text-[#d63447] tracking-wide">
-        MirchiFY
+        MIRCHIFY
       </span>
     </Link>
   );
