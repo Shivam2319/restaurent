@@ -164,10 +164,18 @@ export default function MenuPage() {
   };
 
   const handleAddMore = (category) => {
-    setVisibleCount((prev) => ({
-      ...prev,
-      [category]: (prev[category] || 6) + 3,
-    }));
+    setVisibleCount((prev) => {
+      const currentVisible = prev[category] || 8;
+      const totalItems = fullMenu[category].length;
+      
+      // Calculate how many more we can show (either 3 more or whatever remains)
+      const itemsToAdd = Math.min(3, totalItems - currentVisible);
+      
+      return {
+        ...prev,
+        [category]: currentVisible + itemsToAdd
+      };
+    });
   };
 
   const sendWhatsAppOrder = () => {
