@@ -123,7 +123,7 @@ const ChefSpecials = () => {
       {
         id: "04",
         title: "Vegetable Dum Biryani",
-        image: "/assets/MUGALI.jpg",
+        image: "/assets/VegBiryani.jpeg",
         link: "/menu/veg-biryani",
         description:
           "Fragrant basmati rice cooked with assorted vegetables, saffron and whole spices using the traditional dum pukht method.",
@@ -141,7 +141,7 @@ const ChefSpecials = () => {
       {
         id: "06",
         title: "Vegetable Kebab Platter",
-        image: "/assets/MUGALI.jpg",
+        image: "/assets/vegKebabPlatter.jpg",
         link: "/menu/veg-kebab-platter",
         description:
           "Assortment of our signature vegetarian kebabs including paneer, mushroom and vegetable seekh. Served with three dipping sauces.",
