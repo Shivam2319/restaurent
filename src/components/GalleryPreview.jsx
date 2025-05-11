@@ -8,8 +8,8 @@ const GalleryPreview = () => {
     '/assets/lahsunPanirTikka.jpg',
     '/assets/panirtikkaa.jpg',
     '/assets/menu/mishroomtikka.png',
-    '/assets/menu/mishroomtikka.png',
-    '/assets/menu/mishroomtikka.png',
+    '/assets/menu/Matar Pulao.jpg',
+    '/assets/menu/Veg Biryani.jpg',
     // Add more images as needed
   ];
 

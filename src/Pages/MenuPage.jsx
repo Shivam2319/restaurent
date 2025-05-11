@@ -180,7 +180,7 @@ export default function MenuPage() {
   };
 
   const sendWhatsAppOrder = () => {
-    const phoneNumber = "918810593380"; // WhatsApp number with country code (no + or 0)
+    const phoneNumber = "919935754754"; // WhatsApp number with country code (no + or 0)
     
     // Format order message
     let message = "🍽️ *NEW ORDER* 🍽️%0A%0A";

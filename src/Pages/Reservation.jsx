@@ -54,7 +54,7 @@ const Reservation = () => {
     }) : '';
 
     // Create WhatsApp message
-    const whatsappNumber = "919905880458";
+    const whatsappNumber = "919935754754";
     let message = `*New Reservation Request*%0A%0A`;
     message += `*Name:* ${form.name}%0A`;
     message += `*Phone:* ${form.phone}%0A`;
