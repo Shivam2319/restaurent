@@ -1,82 +1,13 @@
-// import React, { useState } from "react";
-// import { InputText } from "primereact/inputtext";
-// import { Calendar } from "primereact/calendar";
-// import { Dropdown } from "primereact/dropdown";
-// import { Button } from "primereact/button";
-// import TopHeader from "../components/TopHeader";
-// import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer";
-
-// const Reservation = () => {
-//   const [form, setForm] = useState({
-//     name: "",
-//     phone: "",
-//     date: null,
-//     time: "",
-//     guests: null,
-//   });
-
-//   const times = ["12:00 PM", "1:00 PM", "2:00 PM", "6:00 PM", "7:00 PM", "8:00 PM"];
-//   const guests = [1, 2, 3, 4, 5, 6, 7, 8];
-
-//   const handleSubmit = () => {
-//     alert("Reservation submitted!");
-//   };
-
-//   return (
-//     <div className="bg-gradient-to-b from-yellow-50 to-white min-h-screen">
-//       <TopHeader />
-//       <Navbar />
-
-//       <div className="container mx-auto px-4 py-12 max-w-2xl">
-//         <h2 className="text-3xl font-bold text-center text-[#d63447] mb-6">
-//           Reserve a Table
-//         </h2>
-
-//         <div className="bg-white p-6 rounded-xl shadow-md space-y-5">
-//           <span className="p-float-label">
-//             <InputText id="name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className="w-full" />
-//             <label htmlFor="name">Full Name</label>
-//           </span>
-
-//           <span className="p-float-label">
-//             <InputText id="phone" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} className="w-full" />
-//             <label htmlFor="phone">Phone Number</label>
-//           </span>
-
-//           <span className="p-float-label">
-//             <Calendar id="date" value={form.date} onChange={(e) => setForm({ ...form, date: e.value })} showIcon className="w-full" />
-//             <label htmlFor="date">Reservation Date</label>
-//           </span>
-
-//           <Dropdown value={form.time} options={times} onChange={(e) => setForm({ ...form, time: e.value })} placeholder="Select Time" className="w-full" />
-
-//           <Dropdown value={form.guests} options={guests} onChange={(e) => setForm({ ...form, guests: e.value })} placeholder="Number of Guests" className="w-full" />
-
-//           <Button label="Book Reservation" className="w-full bg-[#d63447] border-none" onClick={handleSubmit} />
-//         </div>
-//       </div>
-
-//       <Footer />
-//     </div>
-//   );
-// };
-
-// export default Reservation;
-
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { InputText } from "primereact/inputtext";
 import { Calendar } from "primereact/calendar";
 import { Dropdown } from "primereact/dropdown";
 import { Button } from "primereact/button";
 import { Toast } from "primereact/toast";
-import { useRef } from "react";
 import TopHeader from "../components/TopHeader";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-// import { GiDinner } from "react-icons/gi";
-import { FaUtensils } from "react-icons/fa"; // from FontAwesome
-
+import { FaUtensils } from "react-icons/fa";
 
 const Reservation = () => {
   const toast = useRef(null);
@@ -114,13 +45,34 @@ const Reservation = () => {
       return;
     }
 
-    // Here you would typically send data to your backend
-    console.log("Reservation submitted:", form);
-    
+    // Format date for WhatsApp message
+    const formattedDate = form.date ? form.date.toLocaleDateString('en-US', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }) : '';
+
+    // Create WhatsApp message
+    const whatsappNumber = "919905880458";
+    let message = `*New Reservation Request*%0A%0A`;
+    message += `*Name:* ${form.name}%0A`;
+    message += `*Phone:* ${form.phone}%0A`;
+    if (form.email) message += `*Email:* ${form.email}%0A`;
+    message += `*Date:* ${formattedDate}%0A`;
+    message += `*Time:* ${form.time}%0A`;
+    message += `*Guests:* ${form.guests}%0A`;
+    if (form.specialRequests) message += `*Special Requests:* ${form.specialRequests}%0A`;
+    message += `%0A_Please confirm this reservation_`;
+
+    // Open WhatsApp with the reservation details
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
+
+    // Show success message
     toast.current.show({
       severity: 'success',
       summary: 'Success',
-      detail: 'Your table has been reserved! We will confirm shortly.',
+      detail: 'Your reservation details have been sent via WhatsApp!',
       life: 5000
     });
 
@@ -139,7 +91,7 @@ const Reservation = () => {
   const today = new Date();
   const minDate = new Date();
   const maxDate = new Date();
-  maxDate.setMonth(today.getMonth() + 2); // Allow booking up to 2 months in advance
+  maxDate.setMonth(today.getMonth() + 2);
 
   return (
     <div className="bg-gradient-to-b from-[#fff8f0] to-[#fff0e0] min-h-screen">
@@ -149,9 +101,7 @@ const Reservation = () => {
 
       <div className="container mx-auto px-4 py-12 max-w-2xl">
         <div className="text-center mb-10">
-          {/* <GiDinner className="text-5xl text-[#d63447] mx-auto mb-4" /> */}
           <FaUtensils className="text-5xl text-[#d63447] mx-auto mb-4" />
-
           <h2 className="text-3xl font-bold text-[#192f59] mb-2">
             Reserve Your Table
           </h2>
@@ -162,6 +112,7 @@ const Reservation = () => {
 
         <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg space-y-6">
           <form onSubmit={handleSubmit}>
+            {/* Form fields remain the same as your original code */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <span className="p-float-label">
                 <InputText 
@@ -206,7 +157,7 @@ const Reservation = () => {
                   minDate={minDate}
                   maxDate={maxDate}
                   required
-                  disabledDays={[0]} // Disable Sundays (example)
+                  disabledDays={[0]}
                 />
                 <label htmlFor="date">Reservation Date *</label>
               </span>
