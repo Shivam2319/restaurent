@@ -33,7 +33,7 @@ const ChefSpecials = () => {
       },
       {
         id: "04",
-        title: "Vegetable Dum Biryani",
+        title: "Vegetable Biryani",
         image: "/assets/VegBiryani.jpeg",
         link: "/menu",
         description:
