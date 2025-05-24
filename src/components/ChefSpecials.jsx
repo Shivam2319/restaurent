@@ -110,7 +110,7 @@ const ChefSpecials = () => {
                   href={dish.link}
                   className="inline-block px-3 py-1 sm:px-4 sm:py-2 bg-yellow-400 text-black text-xs sm:text-sm font-semibold rounded-lg transition-all hover:bg-yellow-500"
                 >
-                  Order Now →
+                  View Menu →
                 </a>
               </div>
             </div>

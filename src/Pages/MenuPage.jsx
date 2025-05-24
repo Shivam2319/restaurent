@@ -107,8 +107,8 @@ const fullMenu = {
           { name: "Pineapple Raita", price: "₹85", img: "/assets/menu/Pineapple Raita.jpg" },
         ],
         "On-the-Go Menu": [
-          { name: "Spl. Combo Meal", price: "₹199", img: "/assets/menu/combo.jpg" },
-          // { name: "Dal Rice", price: "₹149", img: "/assets/menu/dalMakhniChawal.jpeg" },
+          // { name: "Spl. Combo Meal", price: "₹199", img: "/assets/menu/combo.jpg" },
+          { name: "Dal Rice", price: "₹149", img: "/assets/menu/dalMakhniChawal.jpeg" },
           { name: "Chole Rice", price: "₹149", img: "/assets/menu/choleChawal.jpeg" },
           { name: "Rajma Rice", price: "₹149", img: "/assets/menu/rajmaChawal.jpeg" },
           { name: "Dal Rice", price: "₹149", img: "/assets/menu/dalMakhniChawal.jpeg" },
